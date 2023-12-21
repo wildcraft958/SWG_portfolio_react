@@ -1,0 +1,36 @@
+footer {
+  background-color: var(--color-primary);
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 30;
+}
+.img {
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  margin: 10px 0;
+  margin-left: 16px;
+}
+.line {
+  color: var(--color-ternary);
+  height: 0.01rem;
+  width: 100%;
+}
+.social-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 16px;
+}
+.social-links ul li {
+  padding: 0 10px;
+}
+
+@media (max-width: 500px) {
+  .social-links{
+    display: none;
+  }
+}

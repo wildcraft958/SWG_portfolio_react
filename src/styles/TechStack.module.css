@@ -1,0 +1,21 @@
+.main {
+  margin: 40px 0;
+  text-align: center;
+}
+.items {
+  padding: 20px;
+}
+.tech-item1 {
+  height: 20%;
+  width: 20%;
+}
+
+.tech-item2 {
+  width: 10%;
+  height: 10%;
+}
+
+.tech-item3 {
+  width: 10%;
+  height: 10%;
+}

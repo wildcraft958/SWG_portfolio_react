@@ -1,0 +1,46 @@
+/* Contact section styles */
+#contact {
+    padding: 10px;
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: var(--color-pent);
+    color: var(--color-primary);
+  }
+  /* Style the container/contact section */
+  .contact-container {
+    border-radius: 5px;
+    background-color: var(--color-tertiary);
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .cnt-btn{
+    color:white;
+    background:linear-gradient(violet,indigo,blue);
+    border-radius: 8px;
+    width: 78px;
+    height: 32px;
+  }
+  .column a:hover{
+    cursor: pointer;
+  }

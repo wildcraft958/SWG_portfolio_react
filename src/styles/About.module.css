@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  /* text-align: center; */
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.dp {
+  height: 20%;
+  width: 20%;
+  border: solid 5px var(--color-ternary);
+ 
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .dp {
+    height: 150px; 
+    width: 150px; 
+  }
+}

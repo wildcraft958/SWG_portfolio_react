@@ -1,0 +1,23 @@
+.intro{
+ background-color: var(--color-tertiary);
+ text-align: center;
+}
+.intro  {
+    padding:20px 0px ;
+
+}
+
+.intro p {
+    padding:20px 0px ;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .intro {
+      padding: 10px 0; 
+    }
+  
+    .intro p {
+      padding: 10px 0; 
+    }
+  }
