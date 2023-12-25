@@ -1,23 +1,24 @@
 import { slide as Menu } from 'react-burger-menu';
 import "../styles/SideBar.css"
+import { HashLink as Link } from "react-router-hash-link"
 
 
 function SideBar() {
     return (
         <div className='main-container'>
             <Menu>
-                <a className="menu-item" href="/Introduction">
+                <Link className="menu-item" smooth to="#Introduction">
                     Introduction
-                </a>
-                <a className="menu-item" href="/Portfolio">
+                </Link>
+                <Link className="menu-item" smooth to="#Portfolio">
                     Portfolio
-                </a>
-                <a className="menu-item" href="/About">
+                </Link>
+                <Link className="menu-item" smooth to="#About">
                     About
-                </a>
-                <a className="menu-item" href="/Contact">
+                </Link>
+                <Link className="menu-item" smooth to="#Contact">
                     Contact
-                </a>
+                </Link>
             </Menu>
         </div>
     )
