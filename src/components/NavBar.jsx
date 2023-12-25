@@ -1,11 +1,6 @@
 import logo from "../assets/dp.jpg"
 import styles from "../styles/NavBar.module.css"
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import About from './About'
-import Contact from './Contact'
-import Introduction from './Intro'
-import Portfolio from "./Portfolio"
-import Home from "../App"
+import { HashLink as Link } from 'react-router-hash-link'
 
 
 
@@ -15,30 +10,24 @@ function NavBar() {
         textDecoration: "none"
     }
     return (
-        <Router>
+        <>
 
             <nav className={styles.nav}>
-                <Link to="/">
+                <Link smooth to="#home">
                     <img src={logo} className={styles["img"]}></img>
                 </Link>
                 <ul className={styles["nav-list"]}>
-                    <li><Link to="/Introduction" style={linkStyle}>Introduction</Link></li>
-                    <li><Link to="/Portfolio" style={linkStyle}>Portfolio</Link></li>
-                    <li><Link to="/About Me" style={linkStyle}>About Me</Link></li>
-                    <li><Link to="/Contact" style={linkStyle}>Contact</Link></li>
-                    <Routes>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/Introduction" component={Introduction} />
-                    <Route path="/Portfolio" component={Portfolio} />
-                    <Route path="/About" component={About} />
-                    <Route path="/Contact" component={Contact} />
-                    </Routes>
+                    <li><Link smooth to="#Introduction" style={linkStyle}>Introduction</Link></li>
+                    <li><Link smooth to="#Portfolio" style={linkStyle}>Portfolio</Link></li>
+                    <li><Link smooth to="#About" style={linkStyle}>About Me</Link></li>
+                    <li><Link smooth to="#Contact" style={linkStyle}>Contact</Link></li>
+
 
                 </ul>
             </nav>
             <hr className={styles["line"]} />
 
-        </Router>
+        </>
 
     )
 }

@@ -1,8 +1,9 @@
 import "../styles/Contact.css"
+import bgc from "../assets/bg.png"
 function Contact() {
   return (
     <>
-      <section id="contact">
+      <section id="Contact">
   <div className="contact-container">
     <div style={{ textAlign: "center" }}>
       <h2>Contact Me</h2>
@@ -11,7 +12,7 @@ function Contact() {
     </div>
     <div className="row">
       <div className="column">
-        <img src="/bg.png" style={{ width: "100%",border :'2px solid var(--color-ternary)'}} alt=";)" />
+        <img src={bgc} style={{ width: "100%",border :'2px solid var(--color-ternary)'}} alt=";)" />
       </div>
       <div className="column">
         <form>

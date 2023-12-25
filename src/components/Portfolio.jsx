@@ -86,7 +86,7 @@ const ImageSlider = ({ slides }) => {
   };
 
   return (
-    <div style={{ ...sliderStyles, ...mediaQueryStyles.sliderStyles }}>
+    <div style={{ ...sliderStyles, ...mediaQueryStyles.sliderStyles }} id="Portfolio">
       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰
